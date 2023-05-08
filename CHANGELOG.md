@@ -1,14 +1,9 @@
 # PubMe Changelog
 
-## [Version 1.2.1] - 2023-04-13
-
-- Fix: renamed actions to lowercase
-
-
 ## [Version 1.2] - 2023-04-13
 
 - NEW: Copy the DOI quickly by just pressing ⌘ + D
-- Fix: show only one date when electronic publication date equals the publication date
+- Fix: show only one Date when electronic publication date equals the publication date
 
 ## [Version 1.1.2] - 2023-04-13
 

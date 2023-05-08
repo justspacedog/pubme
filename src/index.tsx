@@ -414,19 +414,19 @@ function EntryActions(article: Article, query: string, sortBy: string) {
         <Action.Push icon={Icon.Book} title="Read abstract" target={<Details article={article} query={query} />} />
         <Action.Open
           icon={Icon.Globe}
-          title="Open article in browser"
+          title="Open Article in Browser"
           target={article.url}
           shortcut={{ modifiers: ["cmd"], key: "enter" }}
         />
         <Action.Open
           icon={Icon.MagnifyingGlass}
-          title="Open search in Browser"
+          title="Open Search in Browser"
           target={"https://pubmed.ncbi.nlm.nih.gov/?term=" + encodeURI(query!) + "&sort=" + encodeURI(sortBy!)}
           shortcut={{ modifiers: ["cmd", "shift"], key: "enter" }}
         />
         <Action.Open
           icon={Icon.LockUnlocked}
-          title="Open article on Sci-Hub in browser"
+          title="Open Article on Sci-Hub in Browser"
           target={preferences.scihubinstance.value + encodeURI(article.doi)}
           shortcut={{ modifiers: ["opt"], key: "enter" }}
         />
@@ -436,16 +436,16 @@ function EntryActions(article: Article, query: string, sortBy: string) {
   } else if (article.doi) {
     return (
       <ActionPanel>
-        <Action.Push icon={Icon.Book} title="Read abstract" target={<Details article={article} query={query} />} />
+        <Action.Push icon={Icon.Book} title="Read Abstract" target={<Details article={article} query={query} />} />
         <Action.Open
           icon={Icon.Globe}
-          title="Open article in browser"
+          title="Open Article in Browser"
           target={article.url}
           shortcut={{ modifiers: ["cmd"], key: "enter" }}
         />
         <Action.Open
           icon={Icon.MagnifyingGlass}
-          title="Open search in browser"
+          title="Open Search in Browser"
           target={"https://pubmed.ncbi.nlm.nih.gov/?term=" + encodeURI(query!) + "&sort=" + encodeURI(sortBy!)}
           shortcut={{ modifiers: ["cmd", "shift"], key: "enter" }}
         />
@@ -458,13 +458,13 @@ function EntryActions(article: Article, query: string, sortBy: string) {
         <Action.Push icon={Icon.Book} title="Read abstract" target={<Details article={article} query={query} />} />
         <Action.Open
           icon={Icon.Globe}
-          title="Open article in browser"
+          title="Open Article in Browser"
           target={article.url}
           shortcut={{ modifiers: ["cmd"], key: "enter" }}
         />
         <Action.Open
           icon={Icon.MagnifyingGlass}
-          title="Open search in browser"
+          title="Open search in Browser"
           target={"https://pubmed.ncbi.nlm.nih.gov/?term=" + encodeURI(query!) + "&sort=" + encodeURI(sortBy!)}
           shortcut={{ modifiers: ["cmd", "shift"], key: "enter" }}
         />
@@ -480,7 +480,7 @@ function EntryActionsDetail(article: Article) {
         <Action.Open icon={Icon.Globe} title="Open Article in Browser" target={article.url} />
         <Action.Open
           icon={Icon.LockUnlocked}
-          title="Open article on Sci-Hub in browser"
+          title="Open Article on Sci-Hub in Browser"
           target={preferences.scihubinstance.value + encodeURI(article.doi)}
           shortcut={{ modifiers: ["opt"], key: "enter" }}
         />
@@ -490,14 +490,14 @@ function EntryActionsDetail(article: Article) {
   } else if (article.doi) {
     return (
       <ActionPanel>
-        <Action.Open icon={Icon.Globe} title="Open article in browser" target={article.url} />
+        <Action.Open icon={Icon.Globe} title="Open Article in Browser" target={article.url} />
         <Action.CopyToClipboard title="Copy DOI" content={article.doi} shortcut={{ modifiers: ["cmd"], key: "d" }} />
       </ActionPanel>
     );
   } else {
     return (
       <ActionPanel>
-        <Action.Open icon={Icon.Globe} title="Open article in browser" target={article.url} />
+        <Action.Open icon={Icon.Globe} title="Open Article in Browser" target={article.url} />
       </ActionPanel>
     );
   }
