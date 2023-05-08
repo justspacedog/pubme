@@ -480,7 +480,7 @@ function EntryActionsDetail(article: Article) {
         <Action.Open icon={Icon.Globe} title="Open Article in Browser" target={article.url} />
         <Action.Open
           icon={Icon.LockUnlocked}
-          title="Open Article on Sci-Hub in Browser"
+          title="Open article on Sci-Hub in Browser"
           target={preferences.scihubinstance.value + encodeURI(article.doi)}
           shortcut={{ modifiers: ["opt"], key: "enter" }}
         />
