@@ -1,6 +1,6 @@
 # PubMe Changelog
 
-## [Version 1.3] - 2023-06-18
+## [Version 1.3] - 2023-06-20
 - NEW: Cache - trending articles are now cached and only refreshed daily by default (you can change the time for a refresh in settings or turn this feature of)
 - Fixed: If you have just opened an article it now is displayed instantly
 - NEW: Faster Navigation - just use the arrow keys open (→) or close (←) an entry
